@@ -362,7 +362,7 @@ public class PhoneApp extends Application implements AccelerometerListener.Orien
                             } else {
                                 // if the state is "connected", force the speaker off without
                                 // storing the state.
-                                PhoneUtils.turnOnSpeaker(getApplicationContext(), false, false);
+                                PhoneUtils.turnOnSpeaker(getApplicationContext(), true, true);
                             }
                         }
                     }

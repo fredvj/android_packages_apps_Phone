@@ -93,7 +93,7 @@ public class PhoneUtils {
     static final int AUDIO_OFFHOOK = 2;  /** audio behaviour while in call. */
 
     /** Speaker state, persisting between wired headset connection events */
-    private static boolean sIsSpeakerEnabled = false;
+    private static boolean sIsSpeakerEnabled = true;
 
     /** Hash table to store mute (Boolean) values based upon the connection.*/
     private static Hashtable<Connection, Boolean> sConnectionMuteTable =
