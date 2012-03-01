@@ -2388,7 +2388,7 @@ public class PhoneUtils {
 
 	// Ugly hack for the Odys Space - Make it think we are always in docked mode - still honor wired & bluetooth mode
 
-        if(1) {
+        if(true) {
             if (DBG) log("activateSpeakerIfDocked(): In a dock -> may need to turn on speaker.");
             PhoneApp app = PhoneApp.getInstance();
             BluetoothHandsfree bthf = app.getBluetoothHandsfree();
