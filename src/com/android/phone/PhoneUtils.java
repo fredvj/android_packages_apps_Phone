@@ -2439,6 +2439,15 @@ public class PhoneUtils {
         return cm.getDefaultPhone();
     }
 
+    public static Phone getGsmPhone(CallManager cm) {
+        for (Phone phone: cm.getAllPhones()) {
+            if (phone.getPhoneType() == Phone.PHONE_TYPE_GSM) {
+                return phone;
+            }
+        }
+        return null;
+    }
+
     public static Phone getSipPhoneFromUri(CallManager cm, String target) {
         for (Phone phone : cm.getAllPhones()) {
             if (phone.getPhoneType() == Phone.PHONE_TYPE_SIP) {
